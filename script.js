@@ -1,12 +1,12 @@
 function getWeather() {
-    const apikey = 'b4ce638d89c759ef8a9a432a3a597171';
+    const apikey = 'KEY';
     const city = document.getElementById('city').value;
     if (!city){
         alert('Please enter a city');
         return
     }
-    const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}`;
-    const forcastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apikey}`;
+    const currentWeatherUrl = `https://api.`;
+    const forcastUrl = `https://api.`;
     
     
     fetch(currentWeatherUrl)
@@ -82,7 +82,7 @@ function displayHourlyForcast(hourlyData){
         const hour = dateTime.getHours();
         const temperature = Math.round(item.main.temp - 273.15);
         const iconCode = item.weather[0].icon;
-        const iconUrl = `https://openweathermap.org/img/wn/${iconCode}.png`;
+        const iconUrl = `https://open`;
 
         const hourlyItemHtml = `<div class ="hourly-item" >
                                     <span>${hour}:00</span>
